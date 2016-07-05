@@ -14,7 +14,8 @@ class ContactsController < ApplicationController
     name: params[:contact][:name],
     address: params[:contact][:address],
     phone_number: params[:contact][:phone_number],
-    email: params[:contact][:email])
+    email: params[:contact][:email],
+    status: params[:contact][:status])
 
     contact.save
 
@@ -23,7 +24,6 @@ class ContactsController < ApplicationController
 
   def show
     @id = params[:id]
-
     @contact = Contact.find_by(id: @id)
     render 'show'
   end

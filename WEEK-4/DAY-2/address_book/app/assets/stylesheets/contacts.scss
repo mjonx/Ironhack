@@ -10,8 +10,16 @@ h1 {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 form {
   margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
 }
 
 li {
@@ -47,10 +55,31 @@ button:hover {
   background-color: #e14741;
 }
 
-.detail-button {
+.nav-button {
   padding: 10px 20px;
   margin-bottom: 30px;
   width: 120px;
+  font-size: 12px;
+  background-color: #E4554F;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+
+.nav-button:hover {
+  background-color: #e14741;
+}
+
+.detail-button {
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  width: 160px;
   font-size: 12px;
   background-color: #88d0c7;
   text-align: center;
@@ -74,7 +103,8 @@ button:hover {
   width: 100%;
   background-color: #88d0c7;
   color: #fff;
-  padding: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 15px rgba(19,21,26,0.1);
 }
 
 .content-wrapper {
@@ -83,4 +113,26 @@ button:hover {
 
 .title {
   color: #E4554F;
+}
+
+.contact-card {
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 60px 60px 40px;
+  border-radius: 8px;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  box-shadow: 0 2px 15px rgba(19,21,26,0.2);
+}
+
+.img-col img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+.details-col {
+  margin-left: 40px;
 }

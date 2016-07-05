@@ -7,11 +7,21 @@
     <h1><i class="fa fa-user" aria-hidden="true"></i> Contact details</h1>
   </div>
   <div class="content-wrapper">
+    <a href="../"><div class="nav-button"><i class="fa fa-chevron-left" aria-hidden="true"></i> Address Book</div></a>
+    <a href="../new"><div class="nav-button"><i class="fa fa-plus" aria-hidden="true"></i> Add Contact</div></a>
     <div class="contact-card">
+      <div class="img-col">
+        <%= image_tag 'avatar-tech-guy.png' %>
+      </div>
+      <div class="details-col">
       <strong class="title"><%= @contact.name %></strong><br>
-      <%= @contact.address %><br>
-      <%= @contact.phone_number %><br>
-      <%= @contact.email %><br>
+      <i class="fa fa-map-marker" aria-hidden="true"></i> <%= @contact.address %><br>
+      <i class="fa fa-mobile" aria-hidden="true"></i> <%= @contact.phone_number %><br><br>
+      <i class="fa fa-envelope-o" aria-hidden="true"></i> <%= @contact.email %><br><br>
+      <div class="detail-button">
+        <a href="../show"><i class="fa fa-star-o" aria-hidden="true"></i> Mark as favorite</a>
+      </div>
+    </div>
     </div>
   </div>
 </body>
