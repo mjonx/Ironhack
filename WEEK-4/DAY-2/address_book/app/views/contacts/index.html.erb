@@ -7,10 +7,18 @@
     <h1><i class="fa fa-book" aria-hidden="true"></i> My adress book</h1>
   </div>
   <div class="content-wrapper">
-    <a href="../new">Add Contact</a>
+    <a href="../new"><i class="fa fa-plus" aria-hidden="true"></i> Add Contact</a>
     <ul>
       <% @contacts.each do |contact| %>
-        <li><strong class="title">Name: <%= contact.name %></strong><br>Address: <%= contact.address %><br>Phone: <%= contact.phone_number %><br>Email: <%= contact.email %></li>
+        <li><strong class="title">
+          Name: <%= contact.name %></strong><br>
+          Address: <%= contact.address %><br>
+          Phone: <%= contact.phone_number %><br>
+          Email: <%= contact.email %><br>
+          ID: <%= contact.id %></li>
+          <div class="detail-button">
+            <a href="../show/<%= contact.id %>"><i class="fa fa-search" aria-hidden="true"></i> Show details</a>
+          </div>
       <% end %>
     </ul>
   </div>

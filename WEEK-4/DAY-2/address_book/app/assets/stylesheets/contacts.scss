@@ -15,7 +15,59 @@ form {
 }
 
 li {
+  margin-bottom: 10px;
+}
+
+input {
+  height: 20px;
+  width: 260px;
   margin-bottom: 20px;
+}
+textarea {
+  height: 60px;
+  width: 260px;
+  margin-bottom: 20px;
+}
+
+button {
+  height: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 20px;
+  background-color: #E4554F;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e14741;
+}
+
+.detail-button {
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  width: 120px;
+  font-size: 12px;
+  background-color: #88d0c7;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.detail-button a {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.detail-button:hover {
+  background-color: #43a89c;
 }
 
 .top-row {

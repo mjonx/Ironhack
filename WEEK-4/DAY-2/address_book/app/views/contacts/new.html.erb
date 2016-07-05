@@ -8,29 +8,29 @@
   </div>
 
   <div class="content-wrapper">
-    <a href="../">Address Book</a>
+    <a href="../"><i class="fa fa-chevron-left" aria-hidden="true"></i> Address Book</a>
 
     <form action="/contacts" method="POST">
     <div>
-      <label for="contact_name">Name</label><br>
+      <label for="contact_name">Name:</label><br>
       <input type="text" name="contact[name]" id="contact_name">
     </div>
 
     <div>
-      <label for="contact_address">Address</label><br>
+      <label for="contact_address">Address:</label><br>
       <textarea name="contact[address]" id="contact_address"></textarea>
     </div>
 
     <div>
-      <label for="contact_phone">Phone number</label><br>
-      <input type="tel" name="contact[phone]" id="contact_phone">
+      <label for="contact_phone">Phone number:</label><br>
+      <input type="tel" name="contact[phone_number]" id="contact_phone">
     </div>
 
     <div>
-      <label for="contact_email">Email</label><br>
+      <label for="contact_email">Email address:</label><br>
       <input type="email" name="contact[email]" id="contact_email">
     </div>
-    
+
     <input type="hidden" name="authenticity_token"
       value="<%= form_authenticity_token %>">
     <button type="submit">Add contact</button>
