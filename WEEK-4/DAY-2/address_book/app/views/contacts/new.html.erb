@@ -1,0 +1,40 @@
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <script src="https://use.fontawesome.com/932dea43d4.js"></script>
+</head>
+<body>
+  <div class="top-row">
+    <h1><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Add contact to address book</h1>
+  </div>
+
+  <div class="content-wrapper">
+    <a href="../">Address Book</a>
+
+    <form action="/contacts" method="POST">
+    <div>
+      <label for="contact_name">Name</label><br>
+      <input type="text" name="contact[name]" id="contact_name">
+    </div>
+
+    <div>
+      <label for="contact_address">Address</label><br>
+      <textarea name="contact[address]" id="contact_address"></textarea>
+    </div>
+
+    <div>
+      <label for="contact_phone">Phone number</label><br>
+      <input type="tel" name="contact[phone]" id="contact_phone">
+    </div>
+
+    <div>
+      <label for="contact_email">Email</label><br>
+      <input type="email" name="contact[email]" id="contact_email">
+    </div>
+    
+    <input type="hidden" name="authenticity_token"
+      value="<%= form_authenticity_token %>">
+    <button type="submit">Add contact</button>
+  </form>
+</div>
+
+</body>

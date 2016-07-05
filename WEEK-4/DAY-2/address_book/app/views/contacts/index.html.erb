@@ -1,0 +1,17 @@
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <script src="https://use.fontawesome.com/932dea43d4.js"></script>
+</head>
+<body>
+  <div class="top-row">
+    <h1><i class="fa fa-book" aria-hidden="true"></i> My adress book</h1>
+  </div>
+  <div class="content-wrapper">
+    <a href="../new">Add Contact</a>
+    <ul>
+      <% @contacts.each do |contact| %>
+        <li><strong class="title">Name: <%= contact.name %></strong><br>Address: <%= contact.address %><br>Phone: <%= contact.phone_number %><br>Email: <%= contact.email %></li>
+      <% end %>
+    </ul>
+  </div>
+</body>
