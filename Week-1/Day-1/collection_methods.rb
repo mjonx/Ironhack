@@ -1,6 +1,5 @@
 class Home
   attr_reader(:name, :city, :capacity, :price)
-
   def initialize(name, city, capacity, price)
     @name = name
     @city = city
@@ -18,58 +17,60 @@ homes = [
 ]
 
 
-# homes.each { |hm|
-#   puts "#{hm.name} in #{hm.city} \n Price: $#{hm.price} a night"
-# }
+homes.each { |hm|
+  puts "#{hm.name} in #{hm.city} \n Price: $#{hm.price} a night"
+}
+
+
 
 # cities = homes.map do |hm|
 #   hm.city
 # end
 #
 # puts cities
-
-prices = homes.map do |amount|
-  amount.price
-end
-
-# puts prices
-
-total_of_prices = prices.reduce{|sum,x| sum + x}
-puts total_of_prices
-
-average = total_of_prices / homes.length
-puts average
-
-total_capacities = homes.reduce(0.0) do |sum, hm|
-  sum + hm.capacity
-end
-
-# puts total_capacities
-
-puts "The average capacity is:"
-puts total_capacities / homes.length
-
-# #each_with_index
-# homes.each_with_index do |hm, index|
-#   puts "Home Number #{index + 1}: #{hm.name}"
+#
+# prices = homes.map do |amount|
+#   amount.price
 # end
-
-#select -- used to filter an array
-# Homes in San Juan
-san_juan_homes = homes.select do |hm|
-  # Keep hm only if its city is "San Juan"
-  hm.city == "San Juan"
-end
-
-
-puts "Homes in San Juan are:"
-#This can be done better?
-san_juan_homes.each do |hm|
-  puts hm.name
-end
-
-
-sorted = homes.sort do |home1, home2|
-  # Compare the two homes by their capacity
-  home1.capacity <=> home2.capacity
-end
+#
+# # puts prices
+#
+# total_of_prices = prices.reduce{|sum,x| sum + x}
+# puts total_of_prices
+#
+# average = total_of_prices / homes.length
+# puts average
+#
+# total_capacities = homes.reduce(0.0) do |sum, hm|
+#   sum + hm.capacity
+# end
+#
+# # puts total_capacities
+#
+# puts "The average capacity is:"
+# puts total_capacities / homes.length
+#
+# # #each_with_index
+# # homes.each_with_index do |hm, index|
+# #   puts "Home Number #{index + 1}: #{hm.name}"
+# # end
+#
+# #select -- used to filter an array
+# # Homes in San Juan
+# san_juan_homes = homes.select do |hm|
+#   # Keep hm only if its city is "San Juan"
+#   hm.city == "San Juan"
+# end
+#
+#
+# puts "Homes in San Juan are:"
+# #This can be done better?
+# san_juan_homes.each do |hm|
+#   puts hm.name
+# end
+#
+#
+# sorted = homes.sort do |home1, home2|
+#   # Compare the two homes by their capacity
+#   home1.capacity <=> home2.capacity
+# end

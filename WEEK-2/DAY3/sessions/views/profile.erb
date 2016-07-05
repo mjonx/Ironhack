@@ -1,0 +1,30 @@
+<!-- views/profile.erb -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login page</title>
+  <style>
+  body {
+    font-family: 'Open Sans';
+    background-color: #fff;
+    text-transform: uppercase;
+    margin:0 auto;
+    text-align: center;
+    color: #74BDCA;
+  }
+  h1 {
+    color: #74BDCA;
+  }
+  h3 {
+    color: #000;
+  }
+  </style>
+</head>
+<body>
+  <h1>profile</h1>
+  <img src="http://infocoalition.com/images/tba.png" style="max-width: 100px;">
+<br><br>
+  <form action="/logout" method="post">
+    <input type="submit" name="logout" value="Log out">
+  </form>
+</body>

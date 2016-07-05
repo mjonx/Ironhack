@@ -1,0 +1,54 @@
+body {
+  font-family: 'Open Sans';
+  background-image: url("/psucculents-blog.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+h2 { color: #73C6B6; font-weight: 800; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.middle {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: #A3E4D7;
+  padding: 40px;
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 60px;
+  min-width: 400px;
+}
+
+.card img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.card img:hover {
+  width: 220px;
+  -webkit-transition-property: width; /* Safari */
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-property: width;
+    transition-duration: 1s;
+}
+
+.box {
+  width: 200px;
+  background-color: #fff;
+  color: #A3E4D7;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 10px;
+}

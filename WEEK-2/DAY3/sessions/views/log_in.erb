@@ -1,0 +1,36 @@
+<!-- views/login.erb -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login page</title>
+  <style>
+  body {
+    font-family: 'Open Sans';
+    background-color: #fff;
+    text-transform: uppercase;
+    margin:0 auto;
+    text-align: center;
+    color: #74BDCA;
+  }
+  h1 {
+    color: #74BDCA;
+  }
+  h3 {
+    color: #000;
+  }
+  </style>
+</head>
+<body>
+  <h1>Login </h1>
+
+  <form action="/login" method="POST">
+    <label for="name">Your username:</label><br>
+    <input type="text" name="username" placeholder="Username"><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" name="password" placeholder="Password"> <br><br>
+
+    <button type="submit" name="btn" value="login">LOGIN</button>
+  </form>
+
+</body>

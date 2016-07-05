@@ -1,0 +1,59 @@
+body {
+  margin: 0 auto;
+}
+
+.top-bar {
+  background-color: #fff;
+  width: 100%;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  box-shadow: 0 2px 15px rgba(19,21,26,0.2);
+  z-index: 99;
+}
+
+.top-bar a {
+  margin-right: 20px;
+  color: #66757f;
+}
+
+.top-bar a:hover {
+  text-decoration: none;
+  color: #009999;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.cover-photo {
+  height: 50vh;
+  background-image: url('https://pbs.twimg.com/profile_banners/1551130856/1465814511/1500x500');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  /*background-size: cover;*/
+}
+
+.stat-bar{
+  background-color: teal;
+  height: 40px;
+}
+
+.main-content {
+  padding: 60px;
+  min-height: 800px;
+  background-color: #F5F8FA;
+}
+
+.main-content .col-md-3, .col-md-6 {
+  background-color: #fff;
+  margin: 0 5px;
+}
+
+.col-md-3 {
+  width: 22%;
+}

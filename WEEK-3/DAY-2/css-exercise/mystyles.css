@@ -1,0 +1,159 @@
+body {
+  background-color: #F5F5F5;
+  font-family: 'Roboto', sans-serif;
+  color: #666;
+  font-size: 12px;
+}
+
+p {
+  margin: 0;
+}
+
+/* BOOTSTRAP COMPONENTS */
+.btn-primary {
+  border-radius: 300px;
+  border: 2px solid #2889D8;
+  background-color: transparent;;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #2889D8;
+  font-weight: 600;
+  padding: 10px 16px;
+  margin-top: 0px;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-primary:hover {
+  background-color: #2889D8;
+  border: 2px solid #2889D8;
+  color: #fff;
+}
+
+.label-default {
+  background-color: transparent;
+  border-radius: 0px;
+  border: 1px solid #aaa;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #aaa;
+  transition: all 0.3s ease 0s;
+}
+
+.label-default:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.label-pink {
+  color: #F64F5A;
+}
+
+/* END BOOTSTRAP COMPONENTS */
+
+.post-wrapper {
+  max-width: 400px;
+  padding: 20px;
+  display: inline-block;
+  float: left;
+}
+
+.post-wrapper a {
+  text-decoration: none;
+}
+
+.media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+
+.media-left img {
+  border-radius: 50%;
+  max-width: 44px;
+}
+
+.post-card {
+  background-color: #fff;
+  border-radius: 6px;
+  padding-bottom: 10px;
+  -webkit-box-shadow: 6px 6px 33px -1px rgba(0,0,0,0.1);
+  -moz-box-shadow: 6px 6px 33px -1px rgba(0,0,0,0.1);
+  box-shadow: 6px 6px 33px -1px rgba(0,0,0,0.1);
+}
+
+.post-top {
+  border-bottom: 1px solid #F5F5F5;
+  padding: 16px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.post-top img {
+  max-width: 28px;
+  margin-right: 20px;
+}
+
+.post-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-content {
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.post-tags p {
+  color: #EEAA5A;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.post-text {
+  margin: 10px 0 20px;
+}
+
+.lrg-text {
+  font-size: 18px;
+}
+
+.comment-button {
+  padding: 10px 0;
+}
+
+.comment-button img {
+  max-width: 36px;
+  margin-right: 10px;
+}
+
+.post-likes {
+  padding: 10px 0;
+  display: inline-block;
+}
+
+.post-likes .fa-heart {
+  color: #EF3E54;
+}
+
+.post-comments {
+  padding: 10px 0;
+  display: flex;
+  justify-content: left;
+  align-items: top;
+}
+
+.post-comments img {
+  max-width: 20px;
+  margin-right: 10px;
+}
+
+.comment-content img {
+  min-width: 100%;
+  margin-top: 10px;
+}

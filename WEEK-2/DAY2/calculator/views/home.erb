@@ -1,0 +1,58 @@
+<!-- views/add.erb -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Calculator</title>
+  <style>
+  body {
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    margin:0 auto;
+    text-align: center;
+  }
+  h1 {
+    color: #73C6B6;
+  }
+  h3 {
+    margin-top: 40px;
+  }
+  </style>
+</head>
+<body>
+<h1>
+  Online Calculator
+</h1>
+<h3>ADD</h3>
+<form action="/calculate_add" method="POST">
+  <input type="number" name="first_number" placeholder="First number">
+  +
+  <input type="number" name="second_number" placeholder="Second number">
+  <button type="submit">Calculate</button>
+</form>
+
+<h3>SUBSTRACT</h3>
+<form action="/calculate_substract" method="POST">
+  <input type="number" name="first_number" placeholder="First number">
+  -
+  <input type="number" name="second_number" placeholder="Second number">
+  <button type="submit">Calculate</button>
+</form>
+
+<h3>MULTIPLY</h3>
+<form action="/calculate_multiply" method="POST">
+  <input type="number" name="first_number" placeholder="First number">
+  *
+  <input type="number" name="second_number" placeholder="Second number">
+  <button type="submit">Calculate</button>
+</form>
+
+<h3>DIVISION</h3>
+<form action="/calculate_divide" method="POST">
+  <input type="number" name="first_number" placeholder="First number">
+  /
+  <input type="number" name="second_number" placeholder="Second number">
+  <button type="submit">Calculate</button>
+</form>
+
+</body>
+</html>

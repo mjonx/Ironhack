@@ -1,0 +1,9 @@
+<h1 style="font-family: 'Open Sans'; color: #73C6B6;" >
+  List of fruits
+</h1>
+
+<ul>
+  <% @fruits.each do |fruit| %> <!-- do not put <%= because it does not need to render the function!! -->
+    <li><%= fruit %></li> <!-- DO use the = becuase this you actually want to show -->
+    <% end %>
+</ul>

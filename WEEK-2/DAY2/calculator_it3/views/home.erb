@@ -1,0 +1,64 @@
+<!-- views/add.erb -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Calculator</title>
+  <style>
+  body {
+    font-family: 'Open Sans';
+    background-color: #26EAB9;
+    text-transform: uppercase;
+    margin:0 auto;
+    text-align: center;
+    color: #26EAB9;
+  }
+  img {
+    max-width: 80px;
+  }
+  h1 {
+    color: #26EAB9;
+  }
+  h3 {
+    color: #000;
+  }
+  h4 {
+    margin-top: 40px;
+    color: #4E626B;
+  }
+
+  .calc_wrapper {
+    max-width: 320px;
+    background-color: #fff;
+    border-radius: 12%;
+    padding: 40px 40px 60px;
+    margin:0 auto;
+    margin-top: 80px;
+    text-align: center;
+    -webkit-box-shadow: 10px 10px 36px -4px rgba(0,0,0,0.38);
+-moz-box-shadow: 10px 10px 36px -4px rgba(0,0,0,0.38);
+box-shadow: 10px 10px 36px -4px rgba(0,0,0,0.38);
+  }
+  </style>
+</head>
+
+<body>
+  <div class="calc_wrapper">
+    <h1>
+      Online Calculator
+    </h1>
+    <img src="/calculator-icon.png">
+    <h4>WHAT DO YOU WANT TO CALCULATE?</h4>
+    <form action="/result" method="POST">
+      <input type="number" name="first_number" placeholder="First number">
+      <input type="number" name="second_number" placeholder="Second number"> <br><br>
+
+      <button type="submit" name="operation" value="add">ADD</button>
+      <button type="submit" name="operation" value="substract">SUBSTRACT</button>
+      <button type="submit" name="operation" value="multiply">MULTIPLY</button>
+      <button type="submit" name="operation" value="divide">DIVIDE</button>
+    </form>
+
+  </div>
+
+</body>
+</html>

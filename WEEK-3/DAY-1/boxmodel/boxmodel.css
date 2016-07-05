@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.8em;
+}
+
+h1 {
+  font-family: 'Trirong', serif;
+  font-size: 38px;
+  letter-spacing: 3px;
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+nav a {
+ display: inline-block;
+ width: 100px;
+ height: 100%;
+ background-color: #ccc;
+ color: #fff;
+ text-decoration: none;
+ line-height: 300%;
+ text-align: center;
+}
+
+nav ul {
+ padding: 0px;
+ margin: 0px;
+ -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+nav li {
+ display: inline-block;
+ list-style-type: none;
+
+}
+
+nav li:nth-child(1n) a {
+ background-color: #EE3E4F;
+ border-left: 0;
+}
+
+nav li:nth-child(1n) a:hover {
+ background-color: #db3445;
+}
+
+nav li:nth-child(2n) a {
+ background-color: #FCB94C;
+}
+
+nav li:nth-child(2n) a:hover {
+ background-color: #e5a237;
+}
+
+
+.box {
+  min-width: 200px;
+  min-height: 100px;
+  background-color: #50BBB5;
+  /*border: 3px solid #F03F53;*/
+  /*padding: 10px;*/
+  margin: 0 auto;
+  text-align: center;
+  background-image: url('http://www.magic4walls.com/wp-content/uploads/2014/08/abstract-polygon-processing-mountain-colored-background-hd-wallpaper.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  color: #fff;
+  padding: 80px;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.col-wrapper {
+  width: 100%;
+  background-color: #f1f0f0;
+  min-height: 100px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.col-4 {
+  width: 22%;
+  background-color: #fff;
+  min-height: 100px;
+  display: inline-block;
+  margin: 6px;
+}
+
+.col-content {
+  margin: 20px;
+  text-align: left;
+}
+
+.col-4 img {
+  width: 100%;
+  border-bottom: 4px solid #F03F53;
+}
