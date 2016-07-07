@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <script src="https://use.fontawesome.com/932dea43d4.js"></script>
     <title>Auction</title>
     <%= csrf_meta_tags %>
 
@@ -9,6 +11,11 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="top-row">
+      <h1>MJ'S Auction Site</h1>
+    </div>
+    <div class="content-wrapper">
+      <%= yield %>
+    </div>
   </body>
 </html>

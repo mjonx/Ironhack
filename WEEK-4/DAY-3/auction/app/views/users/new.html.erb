@@ -1,0 +1,21 @@
+<a href="../">Products</a>
+<a href="../users">Users</a>
+
+<h1>Create user</h1>
+
+<form action="/users" method="POST">
+  <div>
+    <label for="user_name">Name:</label><br>
+    <input type="text" name="user[name]" id="user_name" required>
+  </div>
+
+  <div>
+    <label for="user_email">Email address:</label><br>
+    <input type="email" name="user[email]" id="user_email" required>
+  </div>
+
+  <input type="hidden" name="authenticity_token"
+      value="<%= form_authenticity_token %>">
+
+  <button type="submit">Create user</button>
+</form>

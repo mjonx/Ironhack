@@ -1,0 +1,13 @@
+<a href="../">Products</a>
+<a href="/new">Add User</a>
+
+<h1>Users</h1>
+<!-- <p>Users will be listed here</p> -->
+  <ul>
+    <% @users.each do |user| %>
+      <li><strong class="title">
+        Name: <%= user.name %></strong><br>
+        Email: <%= user.email %><br>
+        ID: <%= user.id %></li>
+    <% end %>
+   </ul>
