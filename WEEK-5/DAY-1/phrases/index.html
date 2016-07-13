@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Phrases</title>
+</head>
+<body>
+  <h1>MY RANDOM PHRASES</h1>
+    <p class="phrase"> </p>
+    <button onclick="showPhrase()">Show random phrase</button>
+
+    <br><br><br>
+
+    <form class="userinput" action="" method="">
+      <p>Add phrase</p>
+      <input type="text" id="newphrase">
+    </form>
+
+    <div class="showhide">
+      <button class="show" onclick="showAll()">Show phrases</button>
+      <button class="hide" onclick="hideAll()">Hide phrases</button>
+    </div>
+
+<p class="allphrases"></p>
+
+<script src="jquery.js" charset="UTF-8"></script>
+<script src="phrases.js" charset="UTF-8"></script>
+</body>
+</html>

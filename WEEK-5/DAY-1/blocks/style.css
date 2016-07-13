@@ -1,0 +1,13 @@
+.red {
+  background-color: #ff7f50;
+}
+
+.blue {
+  background-color: #0080af;
+}
+
+.cell {
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+}

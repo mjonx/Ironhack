@@ -1,13 +1,13 @@
 <a href="../users">Users</a>
+<a href="products/new">Add Product</a>
 
 <h1>Products</h1>
-<!-- <p>Products will be listed here</p> -->
 <ul>
   <% @products.each do |product| %>
     <li><strong class="title">
       Title: <%= product.title %></strong><br>
       Description: <%= product.description %><br>
-      Bidding ends: <%= product.enddate %>
+      <em>Bidding ends: <%= product.enddate %></em><br>
       ID: <%= product.id %></li>
   <% end %>
  </ul>

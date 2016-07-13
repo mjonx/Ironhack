@@ -10,7 +10,7 @@ class UsersController < ApplicationController
   def create
     @user = User.find_by(name: params[:user][:name])
     if @user
-      redirect_to("/new")
+      redirect_to("users/new")
     else
       user = User.new(
       name: params[:user][:name],
