@@ -22,5 +22,20 @@ function handleResponse (data) {
       var listItem = $('<li>').append(artistName);
       listItem.append(artistImage);
       $('#listsOfArtist').append(listItem);
-    })
+    });
   }
+
+  // $('li').on('click', function (e) {
+  //   var id = (e.artists.items.id).val();
+  //   console.log(artistid)
+  // });
+  //
+  // $.ajax({
+  //   type: 'GET',
+  //   url: 'https://api.spotify.com/v1/artists/' + id + '/albums',
+  //   success: showAlbums,
+  //   error: function (err) {
+  //     console.log('error...');
+  //   },
+  //   dataType: 'json'
+  // });

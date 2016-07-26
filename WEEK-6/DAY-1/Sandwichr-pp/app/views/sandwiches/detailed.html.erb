@@ -1,0 +1,22 @@
+<h3><%= @sandwich.name %></h3>
+
+<% @ingredients.each do |y| %>
+	<%= y.name %>
+<% end %>
+
+<% @ingredients_all.each do |x| %>
+<% if !(@ingredients.include?(x)) %>
+<form action='/sandwiches/<%= @sandwich.id %>/ingredients/add/<%= x.id %>' method="POST">
+  <button type="submit"><%= x.name %></button>
+   <input type="hidden" name="authenticity_token"
+      value="<%= form_authenticity_token %>">
+      </form>
+ <% else %>
+ <form action='/sandwiches/<%= @sandwich.id %>/ingredients/delete/<%= x.id %>' method="POST">
+  <button type="submit">Delete <%= x.name %></button>
+   <input type="hidden" name="authenticity_token"
+      value="<%= form_authenticity_token %>">
+      </form>
+
+   <% end %>
+<% end %>

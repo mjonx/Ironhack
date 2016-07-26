@@ -1,0 +1,8 @@
+<ul>
+<% @sandwiches.each do |x| %>
+<li>
+<h1><a href="/sandwich_views/detailed/<%= x.id %>"><%= x.name %></a></h1>
+<p><%= x.bread_type %></p>
+</li>
+<% end %>
+</ul>

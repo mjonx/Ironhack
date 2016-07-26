@@ -12,7 +12,6 @@ for (i = 0; i < 5; i++) {
 
 
 $('.square').click(function(e) {
-  $('.square').each(function(){
-    $(e.currentTarget).toggleClass('color');
-  })
+  $('.color').removeClass('color');
+    $(e.currentTarget).addClass('color');
 });

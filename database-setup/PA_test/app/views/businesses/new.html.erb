@@ -1,0 +1,9 @@
+<h1>Create a New Business</h1>
+
+<%= form_for @business do |f| %>
+
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+  <%= f.submit class: "btn btn-primary" %>
+<% end %>

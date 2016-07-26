@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sandwiches</title>
+</head>
+<body>
+
+  <ul>
+    <% Sandwich.all.each do |x| %>
+      <li>
+        <h1><%= x.name %></h1>
+        <p><%= x.bread_type %></p>
+        <% sandwich = Sandwich.find_by(id: x.id) %>
+        <% calories = 0 %>
+          <% sandwich.ingredients.each do |y| %>
+          <%= y.name %><br>
+          <% calories += y.calories.to_i %>
+          <% end %><br>
+        Calories: <%= calories %>
+      </li>
+    <% end %>
+  </ul>
+
+</body>
+</html>
